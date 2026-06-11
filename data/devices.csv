@@ -1,0 +1,6 @@
+Device,IP,Status,Latency
+Main Router,192.168.1.1,Online,12
+Library Switch,192.168.1.2,Online,7
+Faculty Switch,192.168.1.3,Offline,0
+Student AP,192.168.1.4,Online,23
+Server,192.168.1.5,Online,5
