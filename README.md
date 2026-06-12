@@ -25,8 +25,8 @@ This system provides a centralized dashboard for quick network insights and deci
 - Git & GitHub
 
 SCREEN SHOTS
-![Dashboard](assets/Screenshot(210).png)
-![Status](assets/Screenshot(211).png)
-![Analytics](assets/Screenshot(212).png)
+![Dashboard](assets/Screenshot (210).png)
+![Status](assets/Screenshot (211).png)
+![Analytics](assets/Screenshot (212).png)
 
 
