@@ -23,6 +23,3 @@ This system provides a centralized dashboard for quick network insights and deci
 - Pandas
 - HTML components (Dash)
 - Git & GitHub
-
-## 📊 Screenshots
-
