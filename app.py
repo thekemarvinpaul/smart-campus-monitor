@@ -108,20 +108,17 @@ app.layout = html.Div([
 
     dcc.Graph(figure=latency_fig),
 
-    html.Pre("""
-            Internet
-                |
-          Main Router
-          /         \\
+html.Pre("""
+        Internet
+            |
+      Main Router
+      /         \\
  Library SW      Faculty SW
       |              |
  Student AP     Hostel AP
-    """)
+""")
 
 ])
-])
-
-server = app.server
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8050, debug=False)
