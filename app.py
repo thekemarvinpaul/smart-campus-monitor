@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 app = dash.Dash(__name__)
+server = app.server
 
 devices = pd.read_csv("data/devices.csv")
 
@@ -50,13 +51,14 @@ latency_fig = px.bar(
 table_rows = []
 
 for _, row in devices.iterrows():
-    table_rows.append
-    html.Tr([
+    table_rows.append(
+        html.Tr([
             html.Td(row["Device"]),
             html.Td(row["IP"]),
             html.Td(row["Status"]),
             html.Td(f'{row["Latency"]} ms')
         ])
+    )
     
 
 app.layout = html.Div([
@@ -117,5 +119,9 @@ app.layout = html.Div([
     """)
 
 ])
+])
+
+server = app.server
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8050, debug=False)
